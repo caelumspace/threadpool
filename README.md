@@ -23,29 +23,26 @@ This library provides:
 
 1. **Clone** or **download** the repository:
   
-  bash
   
-  CopyEdit
-  
-  `git clone https://github.com/YourUserName/SentinelFunctions.git`
+  ```
+  git clone https://github.com/YourUserName/SentinelFunctions.git
+  ```
   
 2. **Include** the header in your project:
   
-  cpp
+
   
-  CopyEdit
-  
-  `#include "SentinelFunctions/concurrency/ThreadPool.h"`
+  ```
+  #include "SentinelFunctions/concurrency/ThreadPool.h"
+```
   
 3. **Link** with any required libraries (if any). The `ThreadPool` class only relies on the standard C++ library and requires no additional dependencies.
   
 4. **Use** the class in your code:
   
-  cpp
+
   
-  CopyEdit
-  
-  `
+  ```
   #include <iostream>
   #include "SentinelFunctions/concurrency/ThreadPool.h"
   
@@ -55,17 +52,17 @@ This library provides:
    // Enqueue a simple task
    auto result = pool.enqueue([] {
   
-  ```
+  
      std::cout << "Hello from the thread pool!\n";
      return 42;
-  ```
+  
   
   });
    // Retrieve the result
    std::cout << "The answer is: " << result.get() << std::endl;
    return 0;
   }
-  `
+  ```
   
 
 ## Features
