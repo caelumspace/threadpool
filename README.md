@@ -11,11 +11,13 @@ This library provides:
 
 ## Contents
 
-`SentinelFunctions/
+```
+SentinelFunctions/
 ├── concurrency/
 │ └── ThreadPool.h
 ├── README.md
-└── ...`
+└── ...
+```
 
 - **`concurrency/ThreadPool.h`**: Contains the `ThreadPool` class, which manages a pool of worker threads.
 
